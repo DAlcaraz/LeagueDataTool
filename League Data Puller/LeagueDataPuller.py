@@ -3,8 +3,8 @@ import json
 import requests
 import csv
 
-file = open(r'C:\Users\mda03\OneDrive\Documents\Data\leagueData.csv', 'w', newline='')
-nameFile = open(r'C:\Users\mda03\OneDrive\Documents\Data\nameList.txt', 'a')
+file = open('leagueData.csv', 'w', newline='')
+nameFile = open('nameList.txt', 'a')
 writer = csv.writer(file)
 response = requests.get("https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json")
 
@@ -68,6 +68,10 @@ for x in y['data']:
         str(y['data'][x]['stats']['attackspeed'])
         ]
 
+        #Wukong is a problem child because his reference name is 'Monkey King' 
+        #so he's out of alphabetical order
+        #Manually put him in front of Xayah:
+        
         if str(y['data'][x]['name']) == 'Wukong':
                 problemChild = data
                 problemChild[1] = 145
