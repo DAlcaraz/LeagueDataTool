@@ -1,3 +1,4 @@
-A simple tool that takes data from Riot's champion API which gives you a csv and dataframe to work with and analyze. Requires some python/pandas know-how to use efficiently. 
-It's just a little side project I started out of curiosity about more detailed champion stats that I couldn't really find anywhere else. I'm currently looking into
-developing an application/UI that allows for comparison between champs for people who like to know the numbers behind the game.
+A simple tool that takes data from Riot's champion API which gives you a csv and dataframe to work with and analyze. 
+Requires some python/pandas know-how to use efficiently. 
+It's just a little side project I started out of curiosity about more detailed champion stats that I couldn't really find anywhere else. 
+I'm currently looking into developing an application/UI that allows for comparison between champs for people who like to know the numbers behind the game.
