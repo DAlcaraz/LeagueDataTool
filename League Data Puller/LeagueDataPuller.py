@@ -6,7 +6,7 @@ import csv
 file = open('leagueData.csv', 'w', newline='')
 nameFile = open('nameList.txt', 'a')
 writer = csv.writer(file)
-response = requests.get("https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json")
+response = requests.get("https://ddragon.leagueoflegends.com/cdn/13.3.1/data/en_US/champion.json")
 
 x = response.text
 y = json.loads(x)
